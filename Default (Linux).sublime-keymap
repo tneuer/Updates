@@ -1,0 +1,51 @@
+[
+    { "keys": ["ctrl+c"], "command": "cancel_build" },
+    { "keys": ["ctrl+7"], "command": "toggle_comment", "args": { "block": false } },
+    { "keys": ["ctrl+shift+f"], "command": "find_under" },
+    { "keys": ["ctrl+shift+m"], "command": "expand_selection", "args": {"to": "brackets"} },
+    { "keys": ["ctrl+shift+c"], "command": "exec", "args": {"kill": true} },
+    { "keys": ["ctrl+shift+y"], "command": "fold" },
+    { "keys": ["ctrl+shift+x"], "command": "unfold" },
+    { "keys": ["ctrl+c"], "command": "copy"},
+    { "keys": ["ctrl+v"], "command": "paste"},
+
+    { "keys": ["ctrl+space"], "command": "auto_complete" },
+    { "keys": ["enter"], "command": "insert_best_completion", "args": {"default": "\n", "exact": true}},
+    {"keys": ["enter"], "command": "insert_snippet", "args": {"contents": "="}, "context":
+        [
+            { "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+        ]},
+
+    { "keys": ["tab"], "command": "auto_complete", "context":
+        [
+            { "key": "setting.tab_completion", "operator": "equal", "operand": true },
+            { "key": "preceding_text", "operator": "regex_contains", "operand": "[a-zA-Z0-9]+" }
+        ]
+    },
+    {
+        "command": "anaconda_fill_funcargs", "keys": ["tab"], "context": [
+            {"key": "selector", "operator": "equal", "operand": "source.python"},
+            {"key": "anaconda_insert_funcargs"}
+        ]
+    },
+    { "keys": ["tab"], "command": "next_field", "context":
+        [
+            { "key": "has_next_field", "operator": "equal", "operand": true }
+        ]
+    },
+    { "keys": ["ctrl+k", "ctrl+0"], "command": "unfold_all" },
+
+    { "keys": ["enter"], "command": "insert_snippet", "args": {"contents": "\n\t$0\n"}, "context":
+    [
+        { "key": "setting.auto_indent", "operator": "equal", "operand": true },
+        { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+        { "key": "preceding_text", "operator": "regex_contains", "operand": "(\\($)|(\\{$)", "match_all": true },
+        { "key": "following_text", "operator": "regex_contains", "operand": "(^\\))|(^\\})", "match_all": true }
+    ]
+    },
+    {
+        "command": "anaconda_doc", "keys": ["ctrl+shift+a"], "context": [
+            {"key": "selector", "operator": "equal", "operand": "source.python"}
+        ]
+    }
+]

@@ -1,0 +1,22 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Anaconda",
+		"AutoDocstring",
+		"BracketHighlighter",
+		"CodeFormatter",
+		"Colorsublime",
+		"Conda",
+		"Function Name Display",
+		"InsertDate",
+		"Package Control",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-pyflakes",
+		"Terminal"
+	]
+}

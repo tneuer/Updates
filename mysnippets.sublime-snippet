@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+############################################################
+#   User: ${1:Thomas Neuer (tneuer)}
+#   Date: ${2:curdate}
+#   File path: $TM_FILEPATH
+#   Description: $3
+############################################################
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>hdr</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

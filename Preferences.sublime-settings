@@ -1,0 +1,32 @@
+{
+	"auto_complete": true,
+	"auto_complete_commit_on_tab": false,
+	"auto_complete_triggers":
+	[
+		{
+			"characters": ".",
+			"selector": "source.python - string - comment - constant.numeric"
+		}
+	],
+	"auto_indent": true,
+	"auto_match_enabled": true,
+	"bold_folder_labels": true,
+	"default_encoding": "UTF-8",
+	"detect_indentation": true,
+	"draw_indent_guides": true,
+	"fold_buttons": true,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"save_on_focus_lost": true,
+	"scroll_past_end": true,
+	"show_full_path": true,
+	"smart_indent": true,
+	"spell_check": true,
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": true
+}
